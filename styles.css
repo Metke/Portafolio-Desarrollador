@@ -1,0 +1,414 @@
+/*Colores a manejar en este documento
+    RGB Verde (30, 176, 149)
+    RGB Negro (17, 18, 16)
+    RGB Beige (215, 208, 198)
+    RGB Gris (207, 204, 199)
+    RGB Verde Pino (32, 131, 128)
+
+Paleta Adobe
+Color Theme Swatches in Hex 
+.Teal-and-Mint-1-hex { color: #C7FFED; }
+.Teal-and-Mint-2-hex { color: #D8FFDB; }
+.Teal-and-Mint-3-hex { color: #008F8C; }
+.Teal-and-Mint-4-hex { color: #015958; }
+.Teal-and-Mint-5-hex { color: #023535; }
+*/
+
+@font-face {
+    font-family: "Raleway";
+    src: url(Estilos/Fuentes/Raleway/Raleway-VariableFont_wght.ttf);
+    src: url(Estilos/Fuentes/Raleway/Raleway-Italic-VariableFont_wght.ttf);
+    /*Font para textos*/
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url(Estilos/Fuentes/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Caveat";
+    src: url(Estilos/Fuentes/Caveat/Caveat-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(17, 18, 16);
+}
+
+#introduccion{
+    display: inline-flex;
+    align-items: center;
+    margin-left: 25%;
+}
+
+#introduccion > h1 > span{
+    color: rgb(30, 176, 149);
+    font-family: "Caveat";
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+.perfil{
+    width: 180px;
+    border: 8px, solid rgb(30, 176, 149);
+    border-radius: 60%;
+    margin-left: 50px;
+}
+
+#presentacion > div > p{
+    background-color: #015958;
+    font-family: "Oswald";
+    color: rgb(207, 204, 199);
+    text-align: center;
+    word-spacing: 1px;
+    width: 60%;
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-top: 22px;
+    font-size: 25px;
+}
+
+#presentacion > div > p > span{
+    background-color: #015958;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+#redes{
+    display: flex;
+    justify-content: center;
+}
+
+#redes > a > img{
+    width: 40px;
+    margin-top: 18px;
+    padding-right: 18px;
+}
+
+#about{
+    /*border: #015958 5px solid;*/
+    margin: 8px;
+}
+
+#cv > h2{
+    font-family: "Raleway";
+    font-size: 25px;
+    color: rgb(30, 176, 149);
+}
+
+#cv > a > button{
+    width: 80px;
+    height: 30px;
+    margin-left: 18px;
+    margin-top: 8px;
+    background-color: #015958;
+    color: rgb(207, 204, 199);
+    font-family: "Oswald";
+    font-size: 15px;
+    box-shadow: 1px 1px 2px #C7FFED;
+}
+
+.descripcion > p{
+    font-family: "Oswald";
+    font-size: 18px;
+
+    color: rgb(207, 204, 199);
+    text-align: start;
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#cv{
+    float: inline-start;
+}
+
+.clearfix{
+    float: none;
+}
+
+#about > #works > .trabajo > h3{
+    font-family: "Raleway";
+    font-size: 18px;
+    color: rgb(30, 176, 149);
+    margin-bottom: 10px;
+}
+
+#works > .trabajo{
+    text-align: center;
+    max-width: 150px;
+    margin-right: 55px;
+    max-width: 200px;
+}
+
+#works{
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+#about > #works > .trabajo > p {
+    font-family: "Oswald";
+    font-size: 15px;
+    color: rgb(207, 204, 199);
+    background-color: #015958;
+    
+}
+
+#skills{
+    display:flex;
+    margin-top: 42px;
+    margin-bottom: 18px;
+    text-align: center;
+    justify-content: center;
+    color: rgb(30, 176, 149);
+}
+
+#skills > img{
+    width: 5%;
+    color: rgb(30, 176, 149);
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#projects > h3{
+    font-family: "Raleway";
+    font-size: 22px;
+    color: rgb(30, 176, 149);
+    margin-top: 50px;
+}
+
+#ilustraciones{
+    max-width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 270px;
+    margin-top: 50px;
+}
+
+#ilustraciones > img{
+    width: 175px;
+    height: 180px;
+    border: 7px solid #015958;
+    margin: 5px;
+}
+
+#pweb{
+    display: flex;
+    justify-content: center;
+}
+
+#pweb > a > img{
+    width: 400px;
+    border: 10px solid #015958;
+    margin: 55px;
+}
+
+#estudios > h3{
+    font-family: "Raleway";
+    font-size: 22px;
+    color: rgb(30, 176, 149);
+    margin-bottom: 20px;
+}
+
+#estudios > div{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#estudios > div > figure > figcaption{
+    color: rgb(207, 204, 199);
+    font-family: "Oswald";
+    font-size: 15px;
+}
+
+#TalentoTech > img{
+    width: 178px;
+    height: 85px;
+    margin-bottom: 15px;
+}
+
+#UNAD > img{
+    width: 134px;
+    height: 105px;
+}
+
+#Udemy > img{
+    width: 151px;
+    height: 150px;
+    margin-top: -35px;
+}
+
+#contacto > h3{
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-family: "Raleway";
+    font-size: 22px;
+    color: rgb(30, 176, 149);
+}
+
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 55px;
+    padding: 1em;
+    border: 1px solid #015958;
+    border-radius: 5px;
+    background-color: #015958;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-family: "Oswald";
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(207, 204, 199);
+    background-color: #015958;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid rgb(30, 176, 149);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+form textarea {
+    height: 100px; 
+}
+
+form button {
+    padding: 0.7em 1.5em;
+    color: #fff;
+    background-color: rgb(30, 176, 149);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 468px){
+    #introduccion > h1 > span{
+        color: rgb(30, 176, 149);
+        font-family: "Caveat";
+        font-size: 60px;
+    }
+    
+    #introduccion{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .perfil{
+        margin: 0px auto;
+        text-align: center;
+        margin-top: 18px;
+        margin-bottom: 15px;
+        margin-left: 20px;
+    }
+
+    #redes{
+        margin-left: 70px;
+        margin-top: 18px;
+    }
+
+    #about{
+        margin-left: 22px;
+    }
+
+    #works{
+        margin-left: 55px;
+    }
+
+    #skills > img{
+        width: 10%;
+    }
+
+    #ilustraciones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px auto;
+        margin-left: 85px;
+    }
+
+    #estudios > div{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    #Udemy{
+        position: relative; 
+        margin-bottom: 180px;       
+    }
+
+    #Udemy > img{
+        position: absolute;
+        top: 30px;
+        left: 160px
+    };
+
+    .explicacion3{
+        position: absolute;
+        bottom: 300px;
+        top: 1500px;
+        background-color: #0056b3;
+    }
+}
+
+@media (max-width: 768px){
+    .perfil{
+        margin: 0px auto;
+        text-align: center;
+        margin-top: 18px;
+        margin-bottom: 15px;
+        margin-left: 20px;
+    }
+
+    .descripcion{
+        max-width: 680px;
+        margin-top: 50px;
+    }
+
+    #skills > img{
+        width: 7%;
+    }
+
+    #ilustraciones{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0px auto;
+        margin-left: 85px;
+        margin-top: 50px;
+    }
+
+    #Udemy{
+        margin-right: 50px;
+    }
+
+    form{
+        width: 600px;
+        margin-left: 50px;
+    }
+}
